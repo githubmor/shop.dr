@@ -1,0 +1,50 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --base: #ffffff;
+  --base-100: #f0eeed;
+  --base-200: #f0f0f0;
+  --base-300: #f2f0f1;
+  --neutral: rgba(0, 0, 0, 1);
+  --neutral-100: rgba(0, 0, 0, 0.1);
+  --neutral-200: rgba(0, 0, 0, 0.2);
+  --neutral-300: rgba(0, 0, 0, 0.3);
+  --neutral-400: rgba(0, 0, 0, 0.4);
+  --neutral-600: rgba(0, 0, 0, 0.6);
+}
+
+/* @media (prefers-color-scheme: dark) { */
+.dark {
+  --base: #000000;
+  --base-100: #2f2d2d;
+  --base-200: #2f2f2f;
+  --base-300: #2e2d2e;
+  --neutral: rgba(255, 255, 255, 1);
+  --neutral-100: rgba(255, 255, 255, 0.1);
+  --neutral-200: rgba(255, 255, 255, 0.2);
+  --neutral-300: rgba(255, 255, 255, 0.3);
+  --neutral-400: rgba(255, 255, 255, 0.4);
+  --neutral-600: rgba(255, 255, 255, 0.6);
+}
+/* } */
+
+body {
+  color: var(--neutral);
+  background: var(--base);
+}
+
+@layer {
+  .tes {
+    @apply outline-red-600 outline-2 -outline-offset-1 outline-dashed;
+  }
+
+  .flex-jc-ic {
+    @apply flex justify-center items-center;
+  }
+
+  .flex-ic {
+    @apply flex items-center;
+  }
+}
