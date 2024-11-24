@@ -1,4 +1,4 @@
-import { Banner, Header, Hero } from "./components";
+import { Banner, Brands, Header, Hero } from "./components";
 
 export default function Home() {
   return (
@@ -6,6 +6,7 @@ export default function Home() {
       <Banner />
       <Header />
       <Hero />
+      <Brands />
     </main>
   );
 }
