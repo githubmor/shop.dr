@@ -19,7 +19,7 @@ function ShopDrop() {
           showList
             ? "max-h-48 h-full lg:h-auto lg:p-4   "
             : "max-h-0 h-0 -mt-2 p-0 !border-0 !rounded-none"
-        } lg:absolute left-0 top-full lg:mt-2 lg:border lg:border-neutral-600 lg:shadow-sm lg:rounded-xl -z-10 `}
+        } lg:absolute left-0 top-full lg:mt-2 lg:border  lg:shadow-sm lg:rounded-xl z-10 bg-base `}
       >
         <span className="text-sm">Men</span>
         <span className="text-sm">Women</span>
