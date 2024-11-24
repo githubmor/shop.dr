@@ -3,14 +3,16 @@ import { useEffect, useState } from "react";
 import MoonIcon from "./moon";
 import SunIcon from "./sun";
 
-const deviceTheme = window.matchMedia("(prefers-color-scheme: dark)").matches
-  ? "dark"
-  : "light";
+
 function ThemeSwitch() {
   const [theme, setTheme] = useState("light");
 
   // Load saved theme from localStorage or default to light
   useEffect(() => {
+    const deviceTheme = window.matchMedia("(prefers-color-scheme: dark)")
+      .matches
+      ? "dark"
+      : "light";
     const savedTheme = localStorage.getItem("theme") || deviceTheme;
     setTheme(savedTheme);
     document.documentElement.classList.add(savedTheme);

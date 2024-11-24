@@ -10,13 +10,15 @@ function Header() {
     setshowNav((c) => !c);
   };
   return (
-    <nav
-      className={`lg:container w-full px-4 py-6 grid grid-cols-2 auto-rows-auto justify-self-center 
-        lg:flex  lg:justify-between lg:items-center lg:gap-10 text-neutral `}
-    >
-      <Title onToggle={onToggleNav} />
-      <Navs show={showNav} />
-      <Menus />
+    <nav className={`w-full text-neutral `}>
+      <div
+        className="w-full lg:container px-4 py-6 grid grid-cols-2 auto-rows-auto justify-self-center 
+        lg:flex lg:justify-between lg:items-center lg:gap-10 "
+      >
+        <Title onToggle={onToggleNav} />
+        <Navs show={showNav} />
+        <Menus />
+      </div>
     </nav>
   );
 }
