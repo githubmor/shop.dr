@@ -5,7 +5,7 @@ function Navs({ show }: { show: boolean }) {
     <div
       className={`transition-all duration-500 row-start-2 col-span-2 flex flex-col gap-2 lg:flex lg:flex-row lg:gap-6 ${
         show ? "max-h-[300px] h-full p-4" : "max-h-0 h-0"
-      } lg:!h-full lg:!max-h-full overflow-hidden`}
+      } lg:!h-full lg:!max-h-full overflow-hidden lg:overflow-visible`}
     >
       <ShopDrop />
       <span className="whitespace-nowrap">On Sale</span>

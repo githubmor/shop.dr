@@ -1,6 +1,9 @@
-function DownIcon() {
+import { SVGProps } from "react";
+
+function DownIcon(props: SVGProps<SVGSVGElement>) {
   return (
     <svg
+      {...props}
       width="16"
       height="16"
       viewBox="0 0 16 16"
