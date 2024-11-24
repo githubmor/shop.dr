@@ -40,7 +40,7 @@ body {
     @apply outline-red-600 outline-2 -outline-offset-1 outline-dashed;
   }
 
-  .flex-jc-ic {
+  .flex-center {
     @apply flex justify-center items-center;
   }
 

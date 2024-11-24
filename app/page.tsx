@@ -1,10 +1,11 @@
-import { Banner, Header } from "./components";
+import { Banner, Header, Hero } from "./components";
 
 export default function Home() {
   return (
-    <main>
+    <main className="overflow-y-auto flex flex-col items-center">
       <Banner />
       <Header />
+      <Hero />
     </main>
   );
 }
