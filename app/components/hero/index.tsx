@@ -1,4 +1,4 @@
-import hero from "@/public/hero2.png";
+import hero from "@/public/hero22.png";
 import Image from "next/image";
 import Title from "./title";
 import ShopNow from "./shop-now";
