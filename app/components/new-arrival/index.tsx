@@ -1,3 +1,4 @@
+import Button from "../button";
 import List from "./list";
 
 function NewArrival() {
@@ -7,6 +8,10 @@ function NewArrival() {
         New Arrivals
       </span>
       <List />
+      <Button
+        text="View All"
+        className="bg-transparent text-base-content border border-neutral-100 text-sm font-medium"
+      />
     </div>
   );
 }

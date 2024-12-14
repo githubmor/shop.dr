@@ -1,13 +1,20 @@
+import Link from "next/link";
+
 type Props = {
-    text:string
+  text: string;
+  className?: string;
+};
+function Button({ text, className = "" }: Props) {
+  return (
+    <Link
+      href="#"
+      className={`${
+        className || "w-full lg:w-1/3 bg-neutral text-base"
+      }  rounded-full flex-center whitespace-nowrap px-14 py-4 `}
+    >
+      {text}
+    </Link>
+  );
 }
-   اینجا باید یک دکمه بسازم که همه دکمه های بزرگ رو از روی اون ساخته بشه
-   مثل showNow که ساختم از اون کپی کن
-   بقیه دکمه ها رو هم ببین کامپوننت رو درست طراحی کن
-function Button({}: Props) {
-   return (
-       <div>Button</div>
-   )
-}
-   
-export default Button
+
+export default Button;

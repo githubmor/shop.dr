@@ -27,8 +27,9 @@ async function Product({ product: { price, id, rate, title, tax } }: Props) {
         <Image
           src={imageUrl}
           alt={`Product ${id}`}
-          width={500}
-          height={500}
+          width={300}
+          height={300}
+          className="aspect-square"
           priority
         />
       </div>
