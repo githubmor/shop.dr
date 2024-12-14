@@ -8,7 +8,7 @@ import Button from "../button";
 function Hero() {
   return (
     <div className="w-full bg-base-300 flex-center">
-      <div className=" lg:container flex flex-col lg:flex lg:flex-row gap-6 pt-14 px-4 bg-base-300">
+      <div className="flex flex-col lg:flex lg:flex-row gap-6 pt-14 px-4 lg:px-24 bg-base-300">
         <div className="flex flex-col gap-6 lg:gap-12 flex-auto">
           <Title />
           <Button text="Shop Now" />

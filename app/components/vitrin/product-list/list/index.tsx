@@ -1,4 +1,4 @@
-import Product, { ProductType } from "../../product";
+import Product, { ProductType } from "../../../product";
 
 type Props = {
   fetchProducts: () => Promise<ProductType[]>;

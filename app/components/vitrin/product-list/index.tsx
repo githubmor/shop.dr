@@ -1,5 +1,5 @@
-import Button from "../button";
-import { ProductType } from "../product";
+import Button from "../../button";
+import { ProductType } from "../../product";
 import List from "./list";
 type Props = {
   title: string;
@@ -12,7 +12,7 @@ function ProductList({ title, fetchProducts }: Props) {
       <List fetchProducts={fetchProducts} />
       <Button
         text="View All"
-        className="bg-transparent text-base-content border border-neutral-100 text-sm font-medium"
+        className="lg:w-1/3 self-center bg-transparent text-base-content border border-neutral-100 text-sm font-medium"
       />
     </div>
   );

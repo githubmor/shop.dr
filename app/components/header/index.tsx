@@ -10,9 +10,9 @@ function Header() {
     setshowNav((c) => !c);
   };
   return (
-    <nav className={`w-full text-neutral `}>
+    <nav className="w-full text-neutral">
       <div
-        className="w-full lg:container px-4 py-6 grid grid-cols-2 auto-rows-auto justify-self-center 
+        className="w-full px-4 lg:px-24 py-6 grid grid-cols-2 auto-rows-auto justify-self-center 
         lg:flex lg:justify-between lg:items-center lg:gap-10 "
       >
         <Title onToggle={onToggleNav} />

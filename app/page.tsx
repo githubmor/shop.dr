@@ -1,5 +1,4 @@
-import { Banner, Brands, Header, Hero, ProductList } from "./components";
-import { fetchNewArrivals, fetchTopSelling } from "./utils";
+import { Banner, Brands, Header, Hero, Vitrin } from "./components";
 
 export default function Home() {
   return (
@@ -8,10 +7,7 @@ export default function Home() {
       <Header />
       <Hero />
       <Brands />
-      <div className="divide-y px-4 lg:px-24 flex flex-col items-center w-full">
-        <ProductList title="NEW ARRIVALS" fetchProducts={fetchNewArrivals} />
-        <ProductList title="top selling" fetchProducts={fetchTopSelling} />
-      </div>
+      <Vitrin />
     </main>
   );
 }
