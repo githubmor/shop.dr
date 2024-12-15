@@ -12,7 +12,7 @@ function ProductList({ title, fetchProducts }: Props) {
       <List fetchProducts={fetchProducts} />
       <Button
         text="View All"
-        className="lg:w-1/3 self-center bg-transparent text-base-content border border-neutral-100 text-sm font-medium"
+        className="w-full lg:w-1/3 self-center bg-base text-base-content border border-neutral-100 text-sm font-medium"
       />
     </div>
   );

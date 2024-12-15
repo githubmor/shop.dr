@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Rate from "./rate";
+import { getProductImage } from "@/app/utils";
 
 export type ProductType = {
   id: number;
@@ -13,17 +14,12 @@ type Props = {
   product: ProductType;
 };
 
-async function getProductImage(id: number) {
-  const res = await fetch(`http://localhost:3000/api/products/${id}/image`);
-  if (!res.ok) throw new Error("Failed to fetch product image");
-  return res.json();
-}
-
 async function Product({ product: { price, id, rate, title, tax } }: Props) {
   const { imageUrl } = await getProductImage(id);
+
   return (
     <div className="flex flex-col gap-3 snap-center">
-      <div className="bg-base-100 w-52 lg:w-80 aspect-square rounded-xl">
+      <div className="bg-base-100 w-52 lg:w-80 aspect-square rounded-xl lg:rounded-[1.25rem]">
         <Image
           src={imageUrl}
           alt={`Product ${id}`}
