@@ -31,7 +31,7 @@ function Rate({ rate, showRateNumber = true }: Props) {
         )}
       </div>
       {showRateNumber && (
-        <span className="text-xs text-neutral-600">
+        <span className="text-xs lg:text-sm text-neutral-600">
           <span className="text-neutral">{rate}/</span>5
         </span>
       )}

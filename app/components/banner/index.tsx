@@ -3,11 +3,13 @@ import Link from "next/link";
 function Banner() {
   return (
     <div className="w-full flex gap-1 justify-center items-center bg-neutral text-base py-2">
-      <span className="text-xs">
+      <span className="text-xs lg:text-[1rem]">
         Sign up and get 20% off to your first order.
       </span>
       <Link href="#" className="contents">
-        <span className="font-medium text-xs underline">Sign Up Now</span>
+        <span className="font-medium text-xs lg:text-[1rem] underline">
+          Sign Up Now
+        </span>
       </Link>
     </div>
   );

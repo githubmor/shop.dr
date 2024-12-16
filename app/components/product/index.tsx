@@ -30,17 +30,17 @@ async function Product({ product: { price, id, rate, title, tax } }: Props) {
         />
       </div>
       <div className="flex flex-col gap-1">
-        <span className="font-bold">{title}</span>
+        <span className="font-bold lg:text-[1.25rem]">{title}</span>
         <Rate rate={rate} />
         <div className="flex gap-1">
-          <span className="text-xl font-bold">${price}</span>
+          <span className="text-xl lg:text-2xl font-bold">${price}</span>
           {tax && (
             <>
-              <span className="text-xl font-bold line-through text-neutral-400">
+              <span className="text-xl lg:text-2xl font-bold line-through text-neutral-400">
                 ${(price - (price * tax) / 100).toFixed(2)}
               </span>
               <div className="rounded-full flex-center bg-[#ff3333]/10 px-4 py-1">
-                <small className="text-[0.625rem] text-[#FF3333]">
+                <small className="text-[0.625rem] lg:text-xs text-[#FF3333]">
                   -{tax}%
                 </small>
               </div>
