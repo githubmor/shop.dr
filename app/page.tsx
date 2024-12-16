@@ -1,4 +1,12 @@
-import { Banner, Brands, Header, Hero, StyleList, Vitrin } from "./components";
+import {
+  Banner,
+  Brands,
+  Feedback,
+  Header,
+  Hero,
+  StyleList,
+  Vitrin,
+} from "./components";
 
 export default function Home() {
   return (
@@ -9,6 +17,7 @@ export default function Home() {
       <Brands />
       <Vitrin />
       <StyleList />
+      <Feedback />
     </main>
   );
 }

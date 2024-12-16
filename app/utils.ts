@@ -22,6 +22,7 @@ export async function fetchStyles() {
   }
   return res.json();
 }
+
 export async function getProductImage(id: number) {
   const res = await fetch(`http://localhost:3000/api/products/${id}/image`);
   if (!res.ok) throw new Error("Failed to fetch product image");
@@ -36,3 +37,10 @@ export async function getStyleImage(id: number) {
   return res.json();
 }
 
+export async function fetchFeedbacks() {
+  const res = await fetch("http://localhost:3000/api/feedback");
+  if (!res.ok) {
+    throw new Error("Failed to fetch products");
+  }
+  return res.json();
+}

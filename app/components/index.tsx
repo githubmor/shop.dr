@@ -4,3 +4,4 @@ export { default as Hero } from "./hero";
 export { default as Brands } from "./brands";
 export { default as Vitrin } from "./vitrin";
 export { default as StyleList } from "./style-list";
+export { default as Feedback } from "./feedback";

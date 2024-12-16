@@ -2,9 +2,10 @@ import Image from "next/image";
 
 type Props = {
   rate: number;
+  showRateNumber?: boolean;
 };
 
-function Rate({ rate }: Props) {
+function Rate({ rate, showRateNumber = true }: Props) {
   const numberic = Math.floor(rate);
   const decimal = rate % 1;
   return (
@@ -29,9 +30,11 @@ function Rate({ rate }: Props) {
           />
         )}
       </div>
-      <span className="text-xs text-neutral-600">
-        <span className="text-neutral">{rate}/</span>5
-      </span>
+      {showRateNumber && (
+        <span className="text-xs text-neutral-600">
+          <span className="text-neutral">{rate}/</span>5
+        </span>
+      )}
     </div>
   );
 }
