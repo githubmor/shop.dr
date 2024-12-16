@@ -41,6 +41,7 @@ function Feedback() {
         </span>
         <div className="flex gap-4 justify-end items-center flex-auto text-right">
           <Image
+            role="button"
             onClick={() => onHandleClick("next")}
             width={24}
             height={24}
@@ -48,6 +49,7 @@ function Feedback() {
             alt="arrow"
           />
           <Image
+            role="button"
             onClick={() => onHandleClick("prev")}
             className="rotate-180"
             width={24}
