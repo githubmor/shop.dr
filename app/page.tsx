@@ -2,6 +2,7 @@ import {
   Banner,
   Brands,
   Feedback,
+  Footer,
   Header,
   Hero,
   StyleList,
@@ -20,6 +21,7 @@ export default function Home() {
       <StyleList />
       <Feedback />
       <Subscribe />
+      <Footer />
     </main>
   );
 }

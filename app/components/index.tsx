@@ -6,3 +6,4 @@ export { default as Vitrin } from "./vitrin";
 export { default as StyleList } from "./style-list";
 export { default as Feedback } from "./feedback";
 export { default as Subscribe } from "./subscribe";
+export { default as Footer } from "./footer";
