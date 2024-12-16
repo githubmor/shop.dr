@@ -34,7 +34,7 @@ function Feedback() {
 
   return (
     <>
-      <div className="w-full pt-16 px-4 lg:px-24 flex flex-col gap-6 lg:gap-8">
+      <div className="w-full pt-16 px-4 lg:px-24 flex flex-col gap-6 lg:gap-8 ">
         <div className="flex flex-wrap justify-between items-end">
           <span className="font-anton text-[2rem] lg:text-5xl flex-auto leading-none">
             OUR HAPPY CUSTOMERS

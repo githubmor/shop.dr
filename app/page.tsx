@@ -5,6 +5,7 @@ import {
   Header,
   Hero,
   StyleList,
+  Subscribe,
   Vitrin,
 } from "./components";
 
@@ -18,6 +19,7 @@ export default function Home() {
       <Vitrin />
       <StyleList />
       <Feedback />
+      <Subscribe />
     </main>
   );
 }

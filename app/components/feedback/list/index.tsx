@@ -24,7 +24,7 @@ function List({ currentIndex, feeds }: Props) {
     }
   }, [currentIndex]);
   return (
-    <div className="relative w-full pt-6 lg:pt-8">
+    <div className="relative w-full pt-6 lg:pt-8 pb-[3.125rem] lg:pb-20">
       {/* Blur effect on edges */}
       <div className="absolute left-0 top-0 h-full w-2 lg:w-20 backdrop-blur-[2px] pointer-events-none z-10"></div>
       <div className="absolute right-0 top-0 h-full w-2 lg:w-20 backdrop-blur-[2px] pointer-events-none z-10"></div>
