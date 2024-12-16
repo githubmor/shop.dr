@@ -24,18 +24,24 @@ function List({ currentIndex, feeds }: Props) {
     }
   }, [currentIndex]);
   return (
-    <div
-      ref={containerRef}
-      className="flex overflow-x-scroll snap-x snap-mandatory scrollbar-hide"
-    >
-      {feeds.map((it: FeedbackType) => (
-        <div
-          className="flex-shrink-0 w-full lg:w-1/3 px-[0.625rem] first:pr-[0.625rem] first:!pl-0 last:pl-[0.625rem] last:!pr-0 snap-center"
-          key={it.id}
-        >
-          <Item feedback={it} />
-        </div>
-      ))}
+    <div className="relative w-full pt-6 lg:pt-8">
+      {/* Blur effect on edges */}
+      <div className="absolute left-0 top-0 h-full w-2 lg:w-20 backdrop-blur-[2px] pointer-events-none z-10"></div>
+      <div className="absolute right-0 top-0 h-full w-2 lg:w-20 backdrop-blur-[2px] pointer-events-none z-10"></div>
+
+      <div
+        ref={containerRef}
+        className="flex overflow-x-scroll snap-x snap-mandatory scrollbar-hide px-2 lg:px-24"
+      >
+        {feeds.map((it: FeedbackType) => (
+          <div
+            className="flex-shrink-0 w-full lg:w-1/3 px-[0.625rem]  snap-center"
+            key={it.id}
+          >
+            <Item feedback={it} />
+          </div>
+        ))}
+      </div>
     </div>
   );
 }

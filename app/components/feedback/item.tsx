@@ -8,7 +8,7 @@ type Props = {
 
 function Item({ feedback }: Props) {
   return (
-    <div className="flex flex-col gap-3 p-6 lg:px-8 lg:py-7 rounded-[1.25rem] border border-neutral-100">
+    <div className="flex flex-col h-full gap-3 p-6 lg:px-8 lg:py-7 rounded-[1.25rem] border border-neutral-100">
       <Rate rate={feedback.rate} showRateNumber={false} />
       <div className="flex flex-col gap-2">
         <div className="flex gap-1 items-center">
