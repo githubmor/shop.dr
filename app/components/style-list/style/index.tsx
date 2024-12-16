@@ -21,7 +21,7 @@ async function Style({ style: { id, title } }: Props) {
       <div className="absolute right-0 top-0 h-full w-52 lg:w-72">
         <Image src={imageUrl} alt={title} fill objectFit="cover" />
       </div>
-      <span className="text-xl font-bold">{title}</span>
+      <span className="text-xl lg:text-4xl font-bold">{title}</span>
     </Link>
   );
 }
