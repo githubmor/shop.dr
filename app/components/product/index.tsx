@@ -1,6 +1,8 @@
+"use client";
+import { fetcher } from "@/app/utils";
 import Image from "next/image";
+import useSWR from "swr";
 import Rate from "./rate";
-import { getProductImage } from "@/app/utils";
 
 export type ProductType = {
   id: number;
@@ -14,20 +16,25 @@ type Props = {
   product: ProductType;
 };
 
-async function Product({ product: { price, id, rate, title, tax } }: Props) {
-  const { imageUrl } = await getProductImage(id);
+function Product({ product: { price, id, rate, title, tax } }: Props) {
+  const { data } = useSWR<{ imageUrl: string }>(
+    `/api/products/${id}/image`,
+    fetcher
+  );
 
   return (
     <div className="flex flex-col gap-3 snap-center">
       <div className="bg-base-100 w-52 lg:w-80 aspect-square rounded-xl lg:rounded-[1.25rem]">
-        <Image
-          src={imageUrl}
-          alt={`Product ${id}`}
-          width={300}
-          height={300}
-          className="aspect-square"
-          priority
-        />
+        {data && (
+          <Image
+            src={data.imageUrl}
+            alt={`Product ${id}`}
+            width={300}
+            height={300}
+            className="aspect-square"
+            priority
+          />
+        )}
       </div>
       <div className="flex flex-col gap-1">
         <span className="font-bold lg:text-[1.25rem]">{title}</span>
