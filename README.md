@@ -2,14 +2,6 @@
 
 ![Shop.Dr Screenshot](./screenshot.png) <!-- Add your screenshot here -->
 
-## 🛍️ Overview
-A modern e-commerce platform built with **Next.js**, **TypeScript**, and **Tailwind CSS**, featuring:
-- 🛒 Product catalog with categories
-- 🔍 Advanced search functionality
-- 💳 Secure checkout process
-- 🌓 Dark/light mode toggle
-- 📱 Fully responsive design
-
 ➡️ **Live Demo**: [https://shop-dr.liara.run/](https://shop-dr.liara.run/) 
 
 ## ✅ Implemented Features
