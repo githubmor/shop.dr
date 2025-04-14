@@ -12,14 +12,21 @@ A modern e-commerce platform built with **Next.js**, **TypeScript**, and **Tailw
 
 ➡️ **Live Demo**: [https://shop-dr.liara.run/](https://shop-dr.liara.run/) 
 
-## ✨ Key Features
-| Feature | Description |
-|---------|-------------|
-| **Next.js Optimized** | Server-side rendering for fast page loads |
-| **TypeScript** | Type-safe codebase for better maintainability |
-| **Tailwind CSS** | Utility-first styling for rapid UI development |
-| **DaisyUI Components** | Pre-built accessible UI components |
-| **Figma Designed** | Pixel-perfect implementation from design mockups |
+## ✅ Implemented Features
+| Feature | Status | Description |
+|---------|--------|-------------|
+| **Product Catalog** | 🟢 Completed | Display products with category filtering |
+| **Responsive Design** | 🟢 Completed | Mobile-first layout using Tailwind CSS |
+| **Theme Toggle** | 🟢 Completed | Light/dark mode with DaisyUI |
+| **Cart System** | 🟡 Partial | Basic cart functionality (in progress) |
+
+## 🚧 Planned Features
+| Feature | Priority |
+|---------|----------|
+| Advanced Search | High |
+| Secure Checkout | High |
+| User Accounts | Medium |
+| Product Reviews | Low |
 
 ## 🛠 Tech Stack
 ### Frontend
