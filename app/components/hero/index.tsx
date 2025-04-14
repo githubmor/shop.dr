@@ -1,4 +1,4 @@
-import hero from "/hero22.png";
+import hero from "./hero22.png";
 import Image from "next/image";
 import Title from "./title";
 import Numbers from "./numbers";
