@@ -1,3 +1,4 @@
+
 export const fetcher = async <T>(
   ...args: Parameters<typeof fetch>
 ): Promise<T> => {
@@ -9,23 +10,31 @@ export const fetcher = async <T>(
 };
 
 export async function fetchStyles() {
-  const res = await fetch("http://localhost:3000/api/products/styles/list");
-  if (!res.ok) {
-    throw new Error("Failed to fetch products");
-  }
-  return res.json();
+  return  [
+    { id: 1, title: "Casual" },
+    { id: 2, title: "Formal" },
+    { id: 3, title: "Party" },
+    { id: 4, title: "Gym" },
+  ];
+  // const res = await fetch("/api/products/styles/list");
+  // if (!res.ok) {
+  //   throw new Error("Failed to fetch products");
+  // }
+  // return res.json();
 }
 
 export async function getStyleImage(id: number) {
-  const res = await fetch(
-    `http://localhost:3000/api/products/styles/${id}/image`
-  );
-  if (!res.ok) throw new Error("Failed to fetch product image");
-  return res.json();
+  
+  return { imageUrl: `/style-image/${id}.png` };
+  // const res = await fetch(
+  //   `/api/products/styles/${id}/image`
+  // );
+  // if (!res.ok) throw new Error("Failed to fetch product image");
+  // return res.json();
 }
 
 export async function fetchFeedbacks() {
-  const res = await fetch("http://localhost:3000/api/feedback");
+  const res = await fetch("/api/feedback");
   if (!res.ok) {
     throw new Error("Failed to fetch products");
   }

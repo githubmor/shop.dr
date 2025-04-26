@@ -13,6 +13,10 @@ type Props = {
 async function Style({ style: { id, title } }: Props) {
   const { imageUrl } = await getStyleImage(id);
 
+  if (!id) {
+    return null
+  }
+
   return (
     <Link
       href="#"
