@@ -1,20 +1,12 @@
-"use client";
-import { fetcher } from "@/app/utils";
+import {  fetchProductList } from "@/app/utils";
 import Product, { ProductType } from "../../../product";
-import useSWR from "swr";
 
 type Props = {
-  url: string;
+  type: "top"|"list";
 };
 
-export default function List({ url }: Props) {
-  const { data, error, isLoading } = useSWR<ProductType[]>(url, fetcher);
-  if (error) {
-    return <span>{error}</span>;
-  }
-  if (isLoading) {
-    return <>isloading ...</>;
-  }
+export default async function List({ type }: Props) {
+  const data = await fetchProductList(type)
   return (
     <div className="flex gap-4 lg:gap-5 w-full justify-between overflow-x-auto snap-x snap-mandatory scrollbar-hide lg:scrollbar-default">
       {data?.map((product: ProductType) => (

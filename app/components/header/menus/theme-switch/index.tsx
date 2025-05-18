@@ -28,7 +28,7 @@ function ThemeSwitch() {
   };
 
   return (
-    <span onClick={toggleTheme}>
+    <span role="button" onClick={toggleTheme}>
       {theme === "light" ? <SunIcon /> : <MoonIcon />}
     </span>
   );

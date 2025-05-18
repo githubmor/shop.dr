@@ -23,7 +23,7 @@ function Product({ product: { price, id, rate, title, tax } }: Props) {
   );
 
   return (
-    <div className="flex flex-col gap-3 snap-center">
+    <div className="flex flex-col gap-3 snap-center" role="button">
       <div className="bg-base-100 w-52 lg:w-80 aspect-square rounded-xl lg:rounded-[1.25rem]">
         {data && (
           <Image
