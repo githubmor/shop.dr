@@ -1,4 +1,4 @@
-import {  fetchProductList } from "@/app/utils";
+import { fetchProductList } from "@/app/orm";
 import Product, { ProductType } from "../../../product";
 
 type Props = {

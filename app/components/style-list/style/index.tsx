@@ -1,4 +1,4 @@
-import { getStyleImage } from "@/app/utils";
+import { getStyleImage } from "@/app/orm";
 import Image from "next/image";
 import Link from "next/link";
 

@@ -1,4 +1,4 @@
-import { fetchStyles } from "@/app/utils";
+import { fetchStyles } from "@/app/orm";
 import Style, { StyleType } from "./style";
 
 async function StyleList() {
