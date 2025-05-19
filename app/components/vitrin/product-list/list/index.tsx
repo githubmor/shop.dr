@@ -1,5 +1,6 @@
 import { fetchProductList } from "@/app/orm";
-import Product, { ProductType } from "../../../product";
+import Product from '../../../product';
+import { ProductType } from '@/app/models';
 
 type Props = {
   type: "top"|"list";

@@ -7,3 +7,4 @@ export { default as StyleList } from "./style-list";
 export { default as Feedback } from "./feedback";
 export { default as Subscribe } from "./subscribe";
 export { default as Footer } from "./footer";
+export { default as Breadcrumbs } from './breadcrumbs';

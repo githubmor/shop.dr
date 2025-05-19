@@ -1,13 +1,14 @@
-import { Breadcrumbs } from "./components"
-
 type Props = {
-    children:React.ReactNode
+  children: React.ReactNode;
+};
+
+function PagesLayout({ children }: Props) {
+  return (
+    <div className="tes w-full px-4 lg:px-24 py-6 ">
+      <hr />
+      {children}
+    </div>
+  );
 }
-   
-function PagesLayout({children}: Props) {
-   return (
-       <div className="w-full px-4 lg:px-24"><hr/><Breadcrumbs />{ children}</div>
-   )
-}
-   
-export default PagesLayout
+
+export default PagesLayout;

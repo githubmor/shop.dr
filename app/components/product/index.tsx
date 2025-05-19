@@ -4,28 +4,22 @@ import Image from "next/image";
 import Rate from "./rate";
 import useSWR from "swr";
 import { useRouter } from "next/navigation";
-
-export type ProductType = {
-  id: number;
-  title: string;
-  rate: number;
-  price: number;
-  tax?: number;
-};
+import { ProductType } from '@/app/models';
 
 type Props = {
   product: ProductType;
 };
 
 function Product({ product: { price, id, rate, title, tax } }: Props) {
-  const router = useRouter()
-  const { data } = useSWR<{ imageUrl: string }>(
-    `/api/products/${id}/image`,
-    fetcher
-  );
+  const router = useRouter();
+  const { data } = useSWR<{ imageUrl: string }>(`/api/products/${id}/image`, fetcher);
 
   return (
-    <div className="flex flex-col gap-3 snap-center" role="button" onClick={()=>router.push(`/Formal/Men/${id}`)}>
+    <div
+      className="flex flex-col gap-3 snap-center"
+      role="button"
+      onClick={() => router.push(`/shop/product/${id}`)}
+    >
       <div className="bg-base-100 w-52 lg:w-80 aspect-square rounded-xl lg:rounded-[1.25rem]">
         {data && (
           <Image
@@ -49,9 +43,7 @@ function Product({ product: { price, id, rate, title, tax } }: Props) {
                 ${(price - (price * tax) / 100).toFixed(2)}
               </span>
               <div className="rounded-full flex-center bg-[#ff3333]/10 px-4 py-1">
-                <small className="text-[0.625rem] lg:text-xs text-[#FF3333]">
-                  -{tax}%
-                </small>
+                <small className="text-[0.625rem] lg:text-xs text-[#FF3333]">-{tax}%</small>
               </div>
             </>
           )}

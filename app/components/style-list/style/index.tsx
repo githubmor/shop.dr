@@ -1,20 +1,17 @@
-import { getStyleImage } from "@/app/orm";
-import Image from "next/image";
-import Link from "next/link";
+import { TagType } from '@/app/models';
+import { getStyleImage } from '@/app/orm';
+import Image from 'next/image';
+import Link from 'next/link';
 
-export type StyleType = {
-  id: number;
-  title: string;
-};
 type Props = {
-  style: StyleType;
+  style: TagType;
 };
 
 async function Style({ style: { id, title } }: Props) {
-  const { imageUrl } = await getStyleImage(id);
+  const imageUrl = await getStyleImage(id);
 
   if (!id) {
-    return null
+    return null;
   }
 
   return (
