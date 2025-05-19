@@ -15,7 +15,7 @@ export const categories: CategoryType[] = [
   { id: 4, title: 'Girl' }
 ];
 
-export const tags: StyleType[] = [
+export const types: StyleType[] = [
   { id: 1, title: 'Men' },
   { id: 2, title: 'Women' },
   { id: 3, title: 'Boy' },
@@ -30,7 +30,7 @@ export const products: ProductType[] = [
     rate: 5,
     category: categories[0],
     type: styles[2],
-    styles: tags.slice(1, 2)
+    styles: types.slice(1, 2)
   },
   {
     id: 2,
@@ -40,7 +40,7 @@ export const products: ProductType[] = [
     tax: 20,
     category: categories[2],
     type: styles[0],
-    styles: tags.slice(2, 3)
+    styles: types.slice(2, 3)
   },
   {
     id: 3,
@@ -49,7 +49,7 @@ export const products: ProductType[] = [
     rate: 3,
     category: categories[0],
     type: styles[3],
-    styles: tags.slice(0, 1)
+    styles: types.slice(0, 1)
   },
   {
     id: 4,
@@ -59,7 +59,7 @@ export const products: ProductType[] = [
     tax: 10,
     category: categories[1],
     type: styles[1],
-    styles: tags.slice(1, 2)
+    styles: types.slice(1, 2)
   },
   {
     id: 5,
@@ -69,7 +69,7 @@ export const products: ProductType[] = [
     tax: 30,
     category: categories[3],
     type: styles[0],
-    styles: tags.slice(3, 4)
+    styles: types.slice(3, 4)
   },
   {
     id: 6,
@@ -78,7 +78,7 @@ export const products: ProductType[] = [
     rate: 4.8,
     category: categories[0],
     type: styles[3],
-    styles: tags.slice(0, 1)
+    styles: types.slice(0, 1)
   },
   {
     id: 7,
@@ -87,7 +87,7 @@ export const products: ProductType[] = [
     rate: 3.9,
     category: categories[0],
     type: styles[2],
-    styles: tags.slice(0, 1)
+    styles: types.slice(0, 1)
   },
   {
     id: 8,
@@ -97,7 +97,7 @@ export const products: ProductType[] = [
     tax: 20,
     category: categories[0],
     type: styles[1],
-    styles: tags.slice(0, 1)
+    styles: types.slice(0, 1)
   },
   {
     id: 9,
@@ -107,7 +107,7 @@ export const products: ProductType[] = [
     tax: 15,
     category: categories[1],
     type: styles[0],
-    styles: tags.slice(1, 2)
+    styles: types.slice(1, 2)
   },
   {
     id: 10,
@@ -116,7 +116,7 @@ export const products: ProductType[] = [
     rate: 3.2,
     category: categories[0],
     type: styles[2],
-    styles: tags.slice(0, 1)
+    styles: types.slice(0, 1)
   },
   {
     id: 11,
@@ -125,7 +125,7 @@ export const products: ProductType[] = [
     rate: 4.0,
     category: categories[1],
     type: styles[1],
-    styles: tags.slice(1, 2)
+    styles: types.slice(1, 2)
   },
   {
     id: 12,
@@ -135,7 +135,7 @@ export const products: ProductType[] = [
     tax: 5,
     category: categories[0],
     type: styles[3],
-    styles: tags.slice(0, 1)
+    styles: types.slice(0, 1)
   },
   {
     id: 13,
@@ -145,7 +145,7 @@ export const products: ProductType[] = [
     tax: 25,
     category: categories[1],
     type: styles[1],
-    styles: tags.slice(1, 2)
+    styles: types.slice(1, 2)
   },
   {
     id: 14,
@@ -154,7 +154,7 @@ export const products: ProductType[] = [
     rate: 2.8,
     category: categories[0],
     type: styles[0],
-    styles: tags.slice(0, 1)
+    styles: types.slice(0, 1)
   },
   {
     id: 15,
@@ -164,7 +164,7 @@ export const products: ProductType[] = [
     tax: 18,
     category: categories[1],
     type: styles[1],
-    styles: tags.slice(1, 2)
+    styles: types.slice(1, 2)
   },
   {
     id: 16,
@@ -173,7 +173,7 @@ export const products: ProductType[] = [
     rate: 3.7,
     category: categories[0],
     type: styles[0],
-    styles: tags.slice(0, 1)
+    styles: types.slice(0, 1)
   },
   {
     id: 17,
@@ -182,7 +182,7 @@ export const products: ProductType[] = [
     rate: 4.3,
     category: categories[3],
     type: styles[0],
-    styles: tags.slice(3, 4)
+    styles: types.slice(3, 4)
   },
   {
     id: 18,
@@ -192,7 +192,7 @@ export const products: ProductType[] = [
     tax: 12,
     category: categories[3],
     type: styles[0],
-    styles: tags.slice(3, 4)
+    styles: types.slice(3, 4)
   },
   {
     id: 19,
@@ -202,7 +202,7 @@ export const products: ProductType[] = [
     tax: 10,
     category: categories[1],
     type: styles[1],
-    styles: tags.slice(1, 2)
+    styles: types.slice(1, 2)
   },
   {
     id: 20,
@@ -211,6 +211,6 @@ export const products: ProductType[] = [
     rate: 3.3,
     category: categories[0],
     type: styles[0],
-    styles: tags.slice(0, 1)
+    styles: types.slice(0, 1)
   }
 ];
