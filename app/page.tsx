@@ -1,4 +1,4 @@
-import { Brands, Feedback, Hero, StyleList, Subscribe, Vitrin } from "./components";
+import { Brands, Feedback, Hero, StyleList, Vitrin } from './components';
 
 export default function Home() {
   return (
@@ -8,7 +8,6 @@ export default function Home() {
       <Vitrin />
       <StyleList />
       <Feedback />
-      <Subscribe />
     </main>
   );
 }
