@@ -1,8 +1,9 @@
-"use client";
+'use client'
 import { fetcher } from "@/app/utils";
 import Image from "next/image";
-import useSWR from "swr";
 import Rate from "./rate";
+import useSWR from "swr";
+import { useRouter } from "next/navigation";
 
 export type ProductType = {
   id: number;
@@ -17,13 +18,14 @@ type Props = {
 };
 
 function Product({ product: { price, id, rate, title, tax } }: Props) {
+  const router = useRouter()
   const { data } = useSWR<{ imageUrl: string }>(
     `/api/products/${id}/image`,
     fetcher
   );
 
   return (
-    <div className="flex flex-col gap-3 snap-center" role="button">
+    <div className="flex flex-col gap-3 snap-center" role="button" onClick={()=>router.push(`/Formal/Men/${id}`)}>
       <div className="bg-base-100 w-52 lg:w-80 aspect-square rounded-xl lg:rounded-[1.25rem]">
         {data && (
           <Image

@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import { Anton, Inter } from "next/font/google";
 
+import { Footer, Header } from "./components";
+import Banner from "./components/banner";
 import "./globals.css";
 
 const anton = Anton({
@@ -28,7 +30,10 @@ export default function RootLayout({
       <body
         className={`${inter.variable} ${anton.variable} antialiased font-sans`}
       >
+         <Banner />
+         <Header />
         {children}
+        <Footer />
       </body>
     </html>
   );

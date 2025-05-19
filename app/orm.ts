@@ -1,4 +1,4 @@
-import { styles, products } from "./db";
+import { products, styles } from "./db";
 
 export async function fetchStyles() {
     return styles;
@@ -9,12 +9,17 @@ export async function fetchStyles() {
   }
   
   export async function getStyleImage(id: number) {
-    
-    return { imageUrl: `/style-image/${id}.png` };
-  }
-  
+    return  `/style-image/${id}.png`
+}
+
   
   export async function fetchProduct(id: string ) {
     return products.find((p) => p.id === Number(id));
   }
   
+
+export async function getCategoryName(catagory: string) {
+    
+  return catagory + "sdfsdfg"
+    
+  } 
