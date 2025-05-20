@@ -16,7 +16,7 @@ export default function Breadcrumbs({ paths }: Props) {
       <ul className="flex space-x-2">
         {breadcrumbs.map((crumb, i) => (
           <li className="flex gap-1 items-center" key={i}>
-            <Link href={crumb.href} className="hover:underline capitalize">
+            <Link href={crumb.href} className={`${crumb.href && 'hover:underline'} capitalize`}>
               {crumb.label}
             </Link>
             {i < breadcrumbs.length - 1 && <Arrow />}
