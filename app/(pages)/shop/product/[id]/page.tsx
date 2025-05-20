@@ -2,13 +2,14 @@ import { Breadcrumbs } from '@/app/components';
 import { fetchProduct } from '@/app/orm';
 
 type Props = {
-  params: {
+  params: Promise<{
     id: string;
-  };
+  }>;
 };
 
 async function Product({ params }: Props) {
-  const product = await fetchProduct(params.id);
+  const { id } = await params;
+  const product = await fetchProduct(id);
   const category = product?.category;
   const type = product?.type;
   return (
@@ -16,8 +17,8 @@ async function Product({ params }: Props) {
       <Breadcrumbs
         paths={[
           { href: '/shop', label: 'Shop' },
-          { href: `/category/${category?.title || ''}`, label: category?.title || '' },
-          { href: `/type/${type?.title || ''}`, label: type?.title || '' }
+          { href: `/category/${category?.id || ''}`, label: category?.title || '' },
+          { href: ``, label: type?.title || '' }
         ]}
       />
       {product?.title}

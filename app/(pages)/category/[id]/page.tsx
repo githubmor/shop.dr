@@ -2,19 +2,18 @@ import { Breadcrumbs } from '@/app/components';
 import { getCategory } from '@/app/orm';
 
 type Props = {
-  params: {
-    id: number;
-  };
+  params: Promise<{
+    id: string;
+  }>;
 };
 
-async function CategoryPage({ params }: Props) {
-  const category = await getCategory(params.id);
+export default async function CategoryPage({ params }: Props) {
+  const { id } = await params;
+  const category = await getCategory(+id);
   return (
     <div>
-      <Breadcrumbs paths={[{ href: `/category/${category?.title}`, label: category?.title || '' }]} />
+      <Breadcrumbs paths={[{ href: `/category/${category?.id}`, label: category?.title || '' }]} />
       {category?.title}
     </div>
   );
 }
-
-export default CategoryPage;
