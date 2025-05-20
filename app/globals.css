@@ -2,6 +2,28 @@
 
 @custom-variant dark (&:is(.dark *));
 
+@custom-variant dark (&:is(.dark *));
+
+@theme {
+  --color-base-100: var(--base-100);
+  --color-base-200: var(--base-200);
+  --color-base-300: var(--base-300);
+  --color-base-400: var(--base-400);
+  --color-base: var(--base);
+
+  --color-neutral-100: var(--neutral-100);
+  --color-neutral-200: var(--neutral-200);
+  --color-neutral-300: var(--neutral-300);
+  --color-neutral-400: var(--neutral-400);
+  --color-neutral-600: var(--neutral-600);
+  --color-neutral: var(--neutral);
+
+  --font-sans:
+    Inter, ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji',
+    'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+  --font-anton: Anton, sans-serif;
+}
+
 @theme {
   --color-base-100: var(--base-100);
   --color-base-200: var(--base-200);
@@ -40,6 +62,38 @@
   }
 }
 
+@utility dark {
+  /* @media (prefers-color-scheme: dark) { */
+  --base: #000000;
+  --base-100: #2f2d2d;
+  --base-200: #2f2f2f;
+  --base-300: #2e2d2e;
+  --neutral: rgba(255, 255, 255, 1);
+  --neutral-100: rgba(255, 255, 255, 0.1);
+  --neutral-200: rgba(255, 255, 255, 0.2);
+  --neutral-300: rgba(255, 255, 255, 0.3);
+  --neutral-400: rgba(255, 255, 255, 0.4);
+  --neutral-600: rgba(255, 255, 255, 0.6);
+}
+
+/*
+  The default border color has changed to `currentcolor` in Tailwind CSS v4,
+  so we've added these compatibility styles to make sure everything still
+  looks the same as it did with Tailwind CSS v3.
+
+  If we ever want to remove these styles, we need to add an explicit border
+  color utility to any element that depends on these defaults.
+*/
+@layer base {
+  *,
+  ::after,
+  ::before,
+  ::backdrop,
+  ::file-selector-button {
+    border-color: var(--color-gray-200, currentcolor);
+  }
+}
+
 @layer utilities {
   :root {
     --base: #ffffff;
@@ -52,20 +106,6 @@
     --neutral-300: rgba(0, 0, 0, 0.3);
     --neutral-400: rgba(0, 0, 0, 0.4);
     --neutral-600: rgba(0, 0, 0, 0.6);
-  }
-
-  /* @media (prefers-color-scheme: dark) { */
-  .dark {
-    --base: #000000;
-    --base-100: #2f2d2d;
-    --base-200: #2f2f2f;
-    --base-300: #2e2d2e;
-    --neutral: rgba(255, 255, 255, 1);
-    --neutral-100: rgba(255, 255, 255, 0.1);
-    --neutral-200: rgba(255, 255, 255, 0.2);
-    --neutral-300: rgba(255, 255, 255, 0.3);
-    --neutral-400: rgba(255, 255, 255, 0.4);
-    --neutral-600: rgba(255, 255, 255, 0.6);
   }
   /* } */
 
