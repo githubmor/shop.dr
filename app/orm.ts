@@ -1,4 +1,4 @@
-import { categories, products, styles, types } from './db';
+import { categories, products, styles } from './db';
 
 export async function fetchStyles() {
   return styles;
@@ -20,8 +20,8 @@ export async function getCategoryName(catagory: string) {
   return catagory + 'sdfsdfg';
 }
 
-export async function getType(id: number) {
-  return types.find((p) => p.id === id);
+export async function getStyle(id: number) {
+  return styles.find((p) => p.id === id);
 }
 
 export async function getCategory(id: number) {
