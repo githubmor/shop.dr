@@ -1,4 +1,4 @@
-import { Breadcrumbs } from '@/app/components';
+import { Breadcrumbs } from '@/app/(pages)/components';
 import { fetchProduct } from '@/app/orm';
 
 type Props = {

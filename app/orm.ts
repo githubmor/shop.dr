@@ -27,3 +27,11 @@ export async function getStyle(id: number) {
 export async function getCategory(id: number) {
   return categories.find((p) => p.id === id);
 }
+
+export async function getCategories() {
+  return categories;
+}
+
+export async function getStyles() {
+  return styles;
+}

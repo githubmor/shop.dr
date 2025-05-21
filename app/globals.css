@@ -115,9 +115,24 @@
   }
 }
 
-@layer {
+@layer components{
   .tes {
-    @apply outline-red-600 outline-2 -outline-offset-1 outline-dashed;
+    @apply outline-2 outline-dashed outline-red-500 ;
+  }
+
+  /* Nested .tes inside a .tes → blue */
+  .tes .tes {
+    @apply outline-blue-600 ;
+  }
+
+  /* 3rd level → yellow */
+  .tes .tes .tes {
+    @apply outline-yellow-500 ;
+  }
+
+  /* 4th level → green */
+  .tes .tes .tes .tes {
+    @apply outline-green-500 ;
   }
 
   .flex-center {

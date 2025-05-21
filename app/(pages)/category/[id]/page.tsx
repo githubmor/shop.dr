@@ -1,5 +1,5 @@
-import { Breadcrumbs } from '@/app/components';
 import { getCategory } from '@/app/orm';
+import { Breadcrumbs } from '../../components';
 
 type Props = {
   params: Promise<{

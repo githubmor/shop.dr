@@ -1,5 +1,5 @@
-import { Breadcrumbs } from '@/app/components';
 import { getStyle } from '@/app/orm';
+import { Breadcrumbs } from '../../components';
 
 type Props = {
   params: Promise<{
