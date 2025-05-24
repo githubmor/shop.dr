@@ -1,13 +1,16 @@
+'use client';
 import DownIcon from '@/app/components/header/navs/show-drop/down-icon';
 
 type Props = {
   label: string;
+  onClick: () => void;
 };
 
-function Item({ label }: Props) {
+function Item({ label, onClick }: Props) {
   return (
-    <li className="flex justify-between items-center cursor-pointer">
-      {label} <DownIcon className=" -rotate-90" />
+    <li onClick={onClick} className="flex justify-between items-center cursor-pointer">
+      {label}
+      <DownIcon className=" -rotate-90" />
     </li>
   );
 }
