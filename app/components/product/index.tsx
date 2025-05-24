@@ -12,7 +12,7 @@ type Props = {
 
 function Product({ product: { price, id, rate, title, tax } }: Props) {
   const router = useRouter();
-  const { data } = useSWR<{ imageUrl: string }>(`/api/products/${id}/image`, fetcher);
+  const { data } = useSWR<{ imageUrl: string }>(`/api/product/${id}/image`, fetcher);
 
   return (
     <div
