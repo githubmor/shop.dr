@@ -16,8 +16,8 @@ export async function fetchProduct(id: string) {
   return products.find((p) => p.id === Number(id));
 }
 
-export async function getCategoryName(catagory: string) {
-  return catagory + 'sdfsdfg';
+export async function getCategoryName(category: string) {
+  return category + ' label';
 }
 
 export async function getStyle(id: number) {

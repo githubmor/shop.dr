@@ -12,7 +12,8 @@ type Props = {
 
 function Product({ product: { price, id, rate, title, tax } }: Props) {
   const router = useRouter();
-  const { data } = useSWR<{ imageUrl: string }>(`/api/product/${id}/image`, fetcher);
+  // const { data } = useSWR<{ imageUrl: string }>(`/api/products/${id}/image`, fetcher);
+  const { data } = useSWR<{ images: string[] }>(`https://api.escuelajs.co/api/v1/products/${id}`, fetcher);
 
   return (
     <div
@@ -23,7 +24,7 @@ function Product({ product: { price, id, rate, title, tax } }: Props) {
       <div className="bg-base-100 aspect-square rounded-xl lg:rounded-[1.25rem]">
         {data && (
           <Image
-            src={data.imageUrl}
+            src={data.images[0]}
             alt={`Product ${id}`}
             width={300}
             height={300}

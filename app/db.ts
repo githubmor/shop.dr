@@ -24,7 +24,7 @@ export const types: StyleType[] = [
 
 export const products: ProductType[] = [
   {
-    id: 1,
+    id: 10,
     title: 'Denim Jeans',
     price: 19.99,
     rate: 5,
@@ -33,7 +33,7 @@ export const products: ProductType[] = [
     styles: styles.slice(1, 2)
   },
   {
-    id: 2,
+    id: 11,
     title: 'Cotton T-Shirt',
     price: 25.36,
     rate: 2.5,
@@ -43,7 +43,7 @@ export const products: ProductType[] = [
     styles: styles.slice(2, 3)
   },
   {
-    id: 3,
+    id: 12,
     title: 'Running Sneakers',
     price: 17.25,
     rate: 3,
@@ -52,7 +52,7 @@ export const products: ProductType[] = [
     styles: styles.slice(0, 1)
   },
   {
-    id: 4,
+    id: 13,
     title: 'Leather Jacket',
     price: 45.38,
     rate: 4.5,
@@ -62,7 +62,7 @@ export const products: ProductType[] = [
     styles: styles.slice(1, 2)
   },
   {
-    id: 5,
+    id: 14,
     title: 'Summer Dress',
     price: 35.5,
     rate: 4.2,
@@ -72,7 +72,7 @@ export const products: ProductType[] = [
     styles: styles.slice(3, 4)
   },
   {
-    id: 6,
+    id: 15,
     title: 'Hoodie',
     price: 29.99,
     rate: 4.8,
@@ -81,7 +81,7 @@ export const products: ProductType[] = [
     styles: styles.slice(0, 1)
   },
   {
-    id: 7,
+    id: 16,
     title: 'Chinos',
     price: 22.75,
     rate: 3.9,
@@ -90,7 +90,7 @@ export const products: ProductType[] = [
     styles: styles.slice(0, 1)
   },
   {
-    id: 8,
+    id: 17,
     title: 'Polo Shirt',
     price: 27.99,
     rate: 4.1,
@@ -100,7 +100,7 @@ export const products: ProductType[] = [
     styles: styles.slice(0, 1)
   },
   {
-    id: 9,
+    id: 18,
     title: 'Wool Sweater',
     price: 39.99,
     rate: 4.7,
@@ -110,7 +110,7 @@ export const products: ProductType[] = [
     styles: styles.slice(1, 2)
   },
   {
-    id: 10,
+    id: 19,
     title: 'Cargo Shorts',
     price: 18.49,
     rate: 3.2,
@@ -119,7 +119,7 @@ export const products: ProductType[] = [
     styles: styles.slice(0, 1)
   },
   {
-    id: 11,
+    id: 20,
     title: 'Silk Scarf',
     price: 14.99,
     rate: 4.0,
@@ -128,7 +128,7 @@ export const products: ProductType[] = [
     styles: styles.slice(1, 2)
   },
   {
-    id: 12,
+    id: 21,
     title: 'Track Pants',
     price: 21.59,
     rate: 3.5,
@@ -138,7 +138,7 @@ export const products: ProductType[] = [
     styles: styles.slice(0, 1)
   },
   {
-    id: 13,
+    id: 22,
     title: 'Blazer',
     price: 55.0,
     rate: 4.9,
@@ -148,7 +148,7 @@ export const products: ProductType[] = [
     styles: styles.slice(1, 2)
   },
   {
-    id: 14,
+    id: 23,
     title: 'Graphic Tee',
     price: 16.75,
     rate: 2.8,
@@ -157,7 +157,7 @@ export const products: ProductType[] = [
     styles: styles.slice(0, 1)
   },
   {
-    id: 15,
+    id: 24,
     title: 'Puffer Jacket',
     price: 60.0,
     rate: 4.6,
@@ -167,7 +167,7 @@ export const products: ProductType[] = [
     styles: styles.slice(1, 2)
   },
   {
-    id: 16,
+    id: 25,
     title: 'Linen Shirt',
     price: 33.2,
     rate: 3.7,
@@ -176,7 +176,7 @@ export const products: ProductType[] = [
     styles: styles.slice(0, 1)
   },
   {
-    id: 17,
+    id: 26,
     title: 'Yoga Leggings',
     price: 24.99,
     rate: 4.3,
@@ -185,7 +185,7 @@ export const products: ProductType[] = [
     styles: styles.slice(3, 4)
   },
   {
-    id: 18,
+    id: 27,
     title: 'Denim Skirt',
     price: 28.5,
     rate: 3.6,
@@ -195,7 +195,7 @@ export const products: ProductType[] = [
     styles: styles.slice(3, 4)
   },
   {
-    id: 19,
+    id: 28,
     title: 'Bomber Jacket',
     price: 48.75,
     rate: 4.4,
@@ -205,7 +205,7 @@ export const products: ProductType[] = [
     styles: styles.slice(1, 2)
   },
   {
-    id: 20,
+    id: 29,
     title: 'Plaid Shirt',
     price: 23.99,
     rate: 3.3,
